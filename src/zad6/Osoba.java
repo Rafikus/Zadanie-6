@@ -16,6 +16,15 @@ public class Osoba extends Wpis {
     }
     @Override
     void Opis() {
-        System.out.println("Imię: " + imie + " Nazwisko: " + nazwisko + " Adres: " + adres + " Numer Telefonu: +" + nrTelefonu.getNrKierunkowy() + nrTelefonu.getNrTelefonu());
+        System.out.println("Imię: " + imie + System.lineSeparator()
+                + " Nazwisko: " + nazwisko + System.lineSeparator()
+                + " Adres: " + adres + System.lineSeparator()
+                + " Numer Telefonu: +" + nrTelefonu.getNrKierunkowy() + nrTelefonu.getNrTelefonu());
     }
+
+    @Override
+    NrTelefoniczny getNrTel() {
+        return this.nrTelefonu;
+    }
+
 }

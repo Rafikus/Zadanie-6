@@ -6,5 +6,5 @@ package zad6;
 public abstract class Wpis {
 
     abstract void Opis();
-
+    abstract NrTelefoniczny getNrTel();
 }
